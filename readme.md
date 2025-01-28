@@ -1,0 +1,1 @@
+Essse repositório serve para mostrar os exercicios em aula para o modulo D do curso senac Tramandai
