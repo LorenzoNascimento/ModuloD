@@ -56,20 +56,20 @@ class Usuario
 
         foreach ($usuarios as $u) {
             if ($this->emailDelete($usuarios, $email, $cont)) {
-                echo "\n Usuario do email " . $email . " deletado com sucesso! \n";
-            } else {
-                echo "O Usuario do email " . $email . " não existe, digite um email existente! \n";
             }
         }
     }
 
     public function emailDelete($usuarios, $email, $cont)
     {
-        for($i = 0; $i <= $cont; $i++){
-        if ($usuarios[$i]->email == $email) {
-            unset($usuarios[$i]);
-            return $usuarios;
+        for ($i = 0; $i <= $cont; $i++) {
+            if ($usuarios[$i]->email == $email) {
+                unset($usuarios[$i]);
+                echo "\n Usuario do email '" . $email . "' deletado com sucesso! \n";
+                return $usuarios;
+            } else {
+                echo "O Usuario do email '" . $email . "' não existe, digite um email existente! \n";
+            }
         }
-    }
     }
 }

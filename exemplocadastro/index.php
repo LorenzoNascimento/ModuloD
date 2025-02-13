@@ -7,13 +7,14 @@ $usuarios = [];
 $op = 0;
 $u = new Usuario();
 
-while ($op != 6) {
+while ($op != 4) {
 
-    echo "\nBem vindo ao cadastro de usuario \n";
-    echo "Escolha uma opção: \n";
+    echo "\n Bem vindo ao cadastro de usuario \n";
+    echo "\n Escolha uma opção: \n";
     echo "1 - Cadastrar \n";
     echo "2 - Mostrar Todos \n";
     echo "3 - Deletar usuario \n";
+    echo "4 - Sair \n";
     $op = readline();
 
     switch ($op) {
@@ -43,5 +44,6 @@ while ($op != 6) {
             
             $u->deletar($usuarios, $email, $cont);
             break;
+            default; echo "\n Digite uma opção valida. \n";
     }
 }
