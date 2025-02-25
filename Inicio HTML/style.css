@@ -1,0 +1,96 @@
+
+:root{--cor-titulo: #1c1c1c}
+body{
+    background-color: gray;
+}
+.MenuPrincipal{
+    color: darkred;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.SubMenu{
+font-size: 2rem;
+}
+
+.LinkTexto{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.MenuLink1{
+    font-size: 25px;
+    color: darkred;
+    text-decoration: dotted;
+ 
+}
+
+.MenuLink2{
+    font-size: 25px;
+    color: darkred;
+    text-decoration: dotted;
+
+}
+
+
+.ChevyTitulo {
+    font-size: 3.75rem;
+    color: darkred;
+    line-height: 100px;
+}
+
+.imgC10{
+    width: 600px;
+    border-radius: 8px;
+}
+
+.ChevySubtitulo {
+    font-size: 2rem;
+}
+
+.ChevyTexto {
+    font-size: 1.5rem;  
+    line-height: 32px;
+    
+}
+
+.LinkChevy {
+    font-size: 25px;
+    color: darkred;
+    text-decoration: dotted;
+    background-color: darkgray;
+    border: 2px solid darkred;
+    border-radius: 8px;
+}
+
+.BackFord{
+    background-color: gray;
+}
+
+.FordTitulo{
+    font-size: 3.75rem;
+    color:darkred;
+    line-height: 100px;
+}
+
+.imgGTD{
+    width: 600px;
+    border-radius: 8px;
+}
+
+.FordSubtitulo{
+    font-size: 2rem;
+}
+
+.FordTexto{
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+.LinkFord{
+    font-size: 25px;
+    color: darkred;
+    text-decoration: dotted;
+    background-color: darkgray;
+    border: 2px solid darkred;  
+    border-radius: 8px;
+}
