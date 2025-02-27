@@ -5,6 +5,7 @@
 body {
     background-color: gray;
     margin: 0;
+    text-align: center;
 }
 
 .MenuPrincipal {
@@ -21,15 +22,15 @@ body {
 
 .SubMenu {
     font-size: 2rem;
-    margin: 15px;
+    margin: 20px;
     line-height: 50px;
 }
 
-.LinkTexto {
+.LinkTextos {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: initial;
     margin: 15px;
-    height: 50px;
+    height: 15px;
 }
 
 .MenuLink {
@@ -37,6 +38,8 @@ body {
     color: darkred;
     text-decoration: dotted;
     padding: 10px;
+    line-height: 75px;
+    
 
 }
 
@@ -44,7 +47,7 @@ body {
     height: 45px;
 }
 
-.ChevyTitulo {
+.TitulosAll {
     font-size: 3.75rem;
     color: darkred;
     line-height: 100px;
@@ -64,7 +67,7 @@ body {
 }
 
 .ChevySubtitulo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 15px;
 }
 
@@ -83,10 +86,6 @@ body {
     border-radius: 8px;
     padding: 10px;
     margin: 15px;
-}
-
-.BackFord {
-    background-color: gray;
 }
 
 .FordTitulo {
@@ -108,7 +107,7 @@ body {
 }
 
 .FordSubtitulo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 15px;
 }
 
@@ -117,3 +116,54 @@ body {
     line-height: 32px;
     margin: 15px;
 }
+
+.OnixTitulo {
+    font-size: 3.75rem;
+    color: darkred;
+    line-height: 100px;
+    background-color: darkgray;
+    border: 5px solid darkred;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    font-weight: bold;
+}
+
+.OnixImagem {
+    width: 600px;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.OnixSubTitulo {
+    font-size: 2.5rem;
+    margin: 15px;
+    height: 125px;
+    
+}
+
+.OnixTexto {
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin: 15px;
+}
+
+.Divs {
+    background-color: darkgray;
+    border: 5px solid darkred;
+    margin: 15px;
+    border-radius: 16px;
+}
+
+.ADASTitulo {
+    font-size: 3.75rem;
+    color: darkred;
+    line-height: 100px;
+    background-color: darkgray;
+    border: 5px solid darkred;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    font-weight: bold;
+}
+
