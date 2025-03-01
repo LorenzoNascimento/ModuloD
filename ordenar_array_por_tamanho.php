@@ -1,10 +1,10 @@
 <?php
+$palavras = ["banana", "maçã", "laranja", "uva"];
 
-$ordenarPorTamanho = function($a, $b){
+$ordenarPorTamanho = function ($a, $b) {
     return strlen($a) - strlen($b);
 };
 
-$palavras = ["banana", "maçã", "laranja", "uva"];
 
-usort($palavras, ordenarPorTamanho());
+usort($palavras, $ordenarPorTamanho);
 print_r($palavras);

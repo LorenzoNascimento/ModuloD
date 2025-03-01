@@ -1,49 +1,32 @@
 <?php
 
-include 'Usuario.php';
+$db = new PDO('sqlite:database.sqlite');
 
-$cont = 1;
-$usuarios = [];
-$op = 0;
-$u = new Usuario();
+$query = $db->prepare("select * from usuario where id = :id");
+$query->execute(['id' => 3]);
+$usuario = $query->fetch();
 
-while ($op != 4) {
 
-    echo "\n Bem vindo ao cadastro de usuario \n";
-    echo "\n Escolha uma opção: \n";
-    echo "1 - Cadastrar \n";
-    echo "2 - Mostrar Todos \n";
-    echo "3 - Deletar usuario \n";
-    echo "4 - Sair \n";
-    $op = readline();
+echo "<pre>";
+var_dump($usuario);
+echo "</pre>";
 
-    switch ($op) {
 
-        case 1:
-            echo "Informe seu nome: \n";
-            $n = readline();
-            echo "Informe seu email: \n";
-            $e = readline();
-            echo "Informe sua senha: \n";
-            $s = readline();
+$q = $db->prepare("insert into usuarios(nome, email, senha) values (:nome, :email, :senha)");
 
-            $usuarios =  $u->cadastrar($n, $e, $s, $usuarios, $cont);
+$users = $q->execute([
+    'nome' => 'Leonardo',
+    'email' => 'leonardo@leo.com.br',
+    'senha' => '123456'
+]);
 
-            if ($cont == count($usuarios)) {
-                $cont++;
-            }
 
-            var_dump($usuarios);
-            break;
-        case 2:
-            $u->mostrar($usuarios);
-            break;
-        case 3:
-            echo "\n Informe o email do usuario que deseja deletar \n";
-            $email = readline();
-            
-            $u->deletar($usuarios, $email, $cont);
-            break;
-            default; echo "\n Digite uma opção valida. \n";
-    }
-}
+$query = $db->query("select * from usuarios");
+$usuarios = $query->fetchAll();
+
+echo '<pre>';
+var_dump($usuarios);
+echo '</pre>';
+
+
+?>
