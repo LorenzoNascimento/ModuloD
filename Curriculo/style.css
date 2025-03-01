@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 340px;
+    margin: 15px;
+}
+
+#header {
+    background-color: rgb(34, 34, 34);
+    padding: 1px;
+    text-align: center;
+}
+
+.txt-decoracao {
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;  
+}
+
+.txt-decoracao li{
+    display: inline-block;
+}
+
+.txt-decoracao li a{
+    display: inline-block;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.sobre-mim article {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.sobre-mim {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.Objetivo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Objetivo {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.formacoes h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.formacoes {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.linguagem h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.linguagem {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.experiencias h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.experiencias {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.adicionais h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.adicionais{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px;
+}
