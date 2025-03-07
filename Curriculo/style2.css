@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    background-color: rgb(69, 166, 231);
+    padding: 15px;
+    gap: 5px;
+    grid-template-columns: 0.75fr 3fr;
+    grid-template-areas: 
+    'header header'
+    'img sobre-mim'
+    'objetivo objetivo'
+    'formacoes formacoes'
+    'linguagem linguagem'
+    'experiencias experiencias'
+    'adicionais adicionais'
+    ;
+}
+
+.container div {
+    padding: 10px;
+    background-color: white;
+    border: solid blueviolet;
+}
+
+.header {
+    grid-area: header;    
+    text-align: center;
+}
+
+.img { 
+    grid-area: img;
+}
+
+.sobre-mim {
+    grid-area: sobre-mim;
+}
+
+.objetivo {
+    grid-area: objetivo;
+}
+
+#formacoes {
+    grid-area: formacoes;
+}
+
+#linguagem {
+    grid-area: linguagem;
+}
+
+#experiencias {
+    grid-area: experiencias;
+}
+
+#adicionais {
+    grid-area: adicionais;
+}
