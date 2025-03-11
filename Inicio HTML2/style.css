@@ -32,7 +32,6 @@ body {
     font-weight: initial;
     margin: 15px;
     height: 15px;
-
 }
 
 .MenuLink {
@@ -96,7 +95,7 @@ body {
     box-shadow: 3px 3px 10px black;
 }
 
-.ChevySubtitulo {
+.Subtitulo {
     font-size: 2.5rem;
     margin: 15px;
 }
@@ -119,11 +118,6 @@ body {
     font-weight: bold;
 }
 
-.FordSubtitulo {
-    font-size: 2.5rem;
-    margin: 15px;
-}
-
 .FordTexto {
     font-size: 1.5rem;
     line-height: 32px;
@@ -142,13 +136,6 @@ body {
     font-weight: bold;
 }
 
-.OnixSubTitulo {
-    font-size: 2.5rem;
-    margin: 15px;
-    height: 125px;
-
-}
-
 .OnixTexto {
     font-size: 1.5rem;
     line-height: 32px;
@@ -162,8 +149,7 @@ body {
     border-radius: 16px;
     box-shadow: 7px 7px 10px black;
     width: 1300px;
-    display:inline-table;
-
+    display: inline-table;
 }
 
 .table {
@@ -171,8 +157,8 @@ body {
     border-collapse: collapse;
     box-shadow: 7px 7px 10px black;
     display: inline-table;
-   height: 400px;
-   width: 900px;
+    height: 400px;
+    width: 900px;
 }
 
 td {
@@ -188,4 +174,216 @@ td {
 
 .tr-top {
     background-color: rgb(90, 90, 90);
+}
+
+
+/* Questionario CSS */
+
+.q-titulo {
+    margin: 10px;
+    font-size: 3.75rem;
+    color: darkred;
+    line-height: 100px;
+    background-color: darkgray;
+    border: 5px solid darkred;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.q-subtitulo {
+    font-size: 2.5rem;
+    height: 30px;
+
+}
+
+fieldset {
+    border: 0;
+}
+
+.q-cadastro {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.q-cadastro input {
+    margin: 10px;
+}
+
+#nome {
+    width: 20%;
+}
+
+#email {
+    width: 20%;
+}
+
+.q-y-n {
+    font-size: 1.5rem;
+}
+
+.marcaSegura {
+    font-size: 1.5rem;
+}
+
+.marcaSegura select {
+    width: 10%;
+    padding: 0.3%;
+}
+
+.estiloPref {
+    font-size: 1.5rem;
+
+}
+
+.opniao {
+    font-size: 1.5rem;
+}
+
+.opniao textarea {
+    width: 30%;
+    border: solid black 1px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.button button {
+    font-size: 25px;
+    color: darkred;
+    text-decoration: dotted;
+    background-color: darkgray;
+    border: 2px solid darkred;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.button button:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+
+@media (min-width: 428px) and (max-width: 767px) {
+    .MenuPrincipal {
+        font-size: 2.5rem;
+        padding: 10px;
+        line-height: 50px;
+        height: 150px;
+    }
+
+    .Subtitulo {
+        font-size: 1.5rem;
+        margin: 15px;
+    }
+
+    .Divs {
+        width: 400px;
+    }
+
+    .LinkTextos {
+        font-size: 1.5rem;
+        font-weight: initial;
+        margin: 15px;
+        height: 75px;
+    }
+
+    .MenuLink {
+        line-height: 100px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .TitulosDuasLinhas {
+        font-size: 2.5rem;
+        height: 150px;
+    }
+
+    .TituloUmaLinha {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .MenuPrincipal {
+        font-size: 3rem;
+        padding: 10px;
+        line-height: 50px;
+    }
+
+    .SubMenu {
+        font-size: 1.75rem;
+        margin: 20px;
+        line-height: 50px;
+    }
+
+    .Subtitulo {
+        font-size: 2rem;
+        margin: 15px;
+    }
+
+    .q-titulo {
+        margin: 10px;
+        font-size: 3.5rem;
+        line-height: 50px;
+        padding: 10px;
+        height: 60px;
+    }
+
+    .Divs {
+        width: 730px;
+    }
+
+    .LinkTextos {
+        height: 50px;
+    }
+
+    .MenuLink {
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1279px) and (max-width: 1366px) {
+    .MenuPrincipal {
+        font-size: 3rem;
+        height: 75px;
+        padding: 10px;
+        line-height: 75px;
+    }
+
+    .TituloUmaLinha {
+        font-size: 2.5rem;
+        line-height: 75px;
+        height: 75px;
+    }
+
+    .Subtitulo {
+        font-size: 2rem;
+        margin: 15px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+
+    .MenuPrincipal {
+        font-size: 3rem;
+        padding: 10px;
+        line-height: 50px;
+        height: 50px;
+    }
+
+
+    .TituloUmaLinha {
+        font-size: 2.5rem;
+        line-height: 50px;
+        height: 50px;
+    }
+
+    .Subtitulo {
+        font-size: 2rem;
+        margin: 15px;
+    }
+
 }
