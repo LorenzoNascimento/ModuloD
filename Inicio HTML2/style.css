@@ -299,7 +299,7 @@ fieldset {
     margin: 15px;
     border: 2px solid black;
     box-shadow: 3px 3px 10px black;
-    animation: fadeIn 1s linear;
+    animation: fadeIn 0.45s linear;
 }
 
 @keyframes fadeIn {
