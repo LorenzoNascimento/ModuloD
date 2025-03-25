@@ -1,4 +1,3 @@
-
 <?php 
 
 include('db.php');
@@ -6,7 +5,7 @@ include('db.php');
 if($_POST){
 
     $query = db()->prepare("INSERT INTO livros (titulo, autor, descricao) VALUES (:titulo, :autor, :descricao)");
-    $livro = $query->execute([
+    $livros = $query->execute([
         'titulo' => $_POST['titulo'],
         'autor' => $_POST['autor'],
         'descricao' => $_POST['descricao']
@@ -18,11 +17,11 @@ if($_POST){
 <form action="" method="POST">
 
 <label for="titulo">Titulo</label>
-<input type="text" name="titulo"> <br>
+<input type="text" name="titulo" required> <br>
 <label for="autor">Autor</label>
-<input type="text" name="autor"> <br>
+<input type="text" name="autor" required> <br>
 <label for="descricao">Descricao</label>
-<input type="text" name="descricao"> <br>
+<input type="text" name="descricao" required> <br>
 <button type="submit">Cadastrar</button>
 </form>
 

@@ -6,10 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Cadastrar</p>
-    <a href="cadastrar.php">Entrar</a>
+    <p>Cadastrar livros</p>
+    <a href="cadastrar.php">Cadastrar</a>
     
-    <p>Ver lista de ususarios</p>
-    <a href="listar.php">Ver Lista</a>
+    <p>Ver lista</p>
+    <a href="listar.php">Ver lista</a>
+
+    <p>Deletar</p>
+    <a href="deletar.php">Deletar</a>
 </body>
 </html>
