@@ -8,6 +8,8 @@ if($_POST){
     $livros = $query->execute([
         'titulo' => $_POST['titulo']
     ]);
+
+    $results = $query->fetchAll();
 }
 ?>
 
