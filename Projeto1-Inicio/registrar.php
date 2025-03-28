@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 include('db.php');
 
-if($_POST){
+if ($_POST) {
     $query = db()->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
 
     $query->execute([
@@ -10,7 +10,7 @@ if($_POST){
         'email' => $_POST['email'],
         'senha' => $_POST['senha']
     ]);
-    
+
     header('Location: index.php');
 }
 
@@ -26,6 +26,6 @@ if($_POST){
     <label for="">Senha</label>
     <input type="password" name="senha"><br>
     <button type="submit">Enviar</button>
-</form> 
+</form>
 
 <a href="index.php">Voltar</a>
