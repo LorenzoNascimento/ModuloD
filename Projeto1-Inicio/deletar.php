@@ -3,20 +3,20 @@
 include('db.php');
 include('protect.php');
 
-if ($_POST) {
-
-    $query = db()->prepare("DELETE FROM livros WHERE titulo = (:titulo)");
-    $livros = $query->execute([
-        'titulo' => $_POST['titulo']
+if(isset($_POST['deletar_livro'])){
+    $query = db()->prepare("DELETE FROM livros WHERE id = :id");
+   $livro = $query->execute([
+        'id' => $_POST['deletar_livro']
     ]);
+    
+    if($livro){
+        header('Location: listar.php');
+    }else{
+        echo 'Delete falhou!';
+    }
 
-    $results = $query->fetch();
 }
-?>
 
-<form action="" method="POST">
-    <label for="titulo">Titulo</label>
-    <input type="text" name="titulo"> <br> <br>
-    <button type="submit">Deletar</button>
-</form>
-<a href="index.php">Pagina inicial</a>
+
+
+?>

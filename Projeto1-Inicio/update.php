@@ -5,9 +5,9 @@ include('protect.php');
 
 if ($_POST) {
 
-    $query = db()->prepare("UPDATE livros SET titulo = :titulo, autor = :autor, descricao = :descricao WHERE titulo = :nome");
+    $query = db()->prepare("UPDATE livros SET titulo = :titulo, autor = :autor, descricao = :descricao WHERE id = :id");
     $update = $query->execute([
-        'nome' => $_POST['nome'],
+        'id' => $_GET['id'],
         'titulo' => $_POST['titulo'],
         'autor' => $_POST['autor'],
         'descricao' => $_POST['descricao']
@@ -19,9 +19,6 @@ if ($_POST) {
 ?>
 
 <form action="" method="POST">
-    <label for="">Nome do livro de que deseja alterar</label>
-    <input type="text" name="nome"><br>
-    <hr>
     <p>Digite as alterções</p>
     <label for="">Titulo</label>
     <input type="text" name="titulo"><br>
@@ -29,6 +26,6 @@ if ($_POST) {
     <input type="text" name="autor"><br>
     <label for="">Descricao</label>
     <input type="text" name="descricao">
-    <button type="submit">Salvar</button>
+    <button onclick="return confirm('Deseja alterar as informações deste livro?')" type="submit">Salvar</button>
 </form>
-<a href="index.php">Voltar</a>
+<a href="listar.php">Voltar</a>

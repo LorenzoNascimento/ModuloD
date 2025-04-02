@@ -9,22 +9,16 @@
 
 <body>
     <p>Criar conta</p>
-    <a href="registrar.php">registrar</a><br>
+    <a href="registrar.php">Criar</a><br>
 
     <p>Login</p>
     <a href="login.php">Login</a><br>
 
     <p>Cadastrar livros</p>
-    <a href="cadastrar.php">Cadastrar Livro</a><br>
+    <a href="cadastrar.php">Cadastrar</a><br>
 
-    <p>Ver lista</p>
+    <p>Ver lista - Livros</p>
     <a href="listar.php">Ver lista</a><br>
-
-    <p>Deletar</p>
-    <a href="deletar.php">Deletar</a><br>
-
-    <p>Update</p>
-    <a href="update.php">Update</a><br>
 
     <p>Sair da conta</p>
     <a href="logout.php">Sair</a><br>
