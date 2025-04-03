@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="justify-items-center bg-gray-300">
@@ -26,8 +25,11 @@
         <div class="w-full grid justify-items-center">
         <a href="logout.php" class="font-bold text-white hover:text-black">Logout</a><br>
         </div>
+        <a href="listar copy.php">AQUI</a>
 
     </div>
 </body>
 
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

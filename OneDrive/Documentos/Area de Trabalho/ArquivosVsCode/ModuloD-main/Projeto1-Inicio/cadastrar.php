@@ -33,47 +33,41 @@ if ($_POST) {
 
 ?>
 
-<body class="bg-gray-300">
+<body class="flex items-center justify-center bg-gray-300">
 
-    <div class="bg-gray-700 justify-items-center p-5">
-        <h1 class="font-bold text-3xl text-white">Cadastro de livros</h1>
-    </div>
+    <div class="bg-gray-700 p-8 rounded-lg w-96 shadow-lg">
+        <h1 class="font-bold text-3xl text-white text-center mb-5">Cadastro de livros</h1>
+    
 
-    <div class="p-3">
+        
         <form method="POST" enctype="multipart/form-data">
 
-            <div class="h-10">
-                <label for="titulo" class="font-bold">Titulo</label>
-                <input type="text" name="titulo" class="border-2 shadow-xl w-53.25 hover:bg-gray-400" required> <br>
+            <div class="mb-4">
+                <label for="titulo" class="font-bold text-white block">Titulo</label>
+                <input type="text" name="titulo" placeholder="Titulo" class="bg-white w-full px-3 py-2 border rounded hover:outline hover:ring-2 hover:ring-blue-400" required> <br>
             </div>
 
-            <div class="h-10">
-                <label for="autor" class="font-bold">Autor</label>
-                <input type="text" name="autor" class="border-2 shadow-xl w-53.5 hover:bg-gray-400" required> <br>
+            <div class="mb-4">
+                <label for="autor" class="font-bold text-white block">Autor</label>
+                <input type="text" name="autor" placeholder="Autor" class="bg-white w-full px-3 py-2 border rounded hover:outline hover:ring-2 hover:ring-blue-400" required> <br>
             </div>
 
-            <div class="h-10">
-                <label for="descricao" class="font-bold">Descricao</label>
-                <input type="text" name="descricao" class="border-2 shadow-xl hover:bg-gray-400" required> <br>
+            <div class="mb-4">
+                <label for="descricao" class="font-bold text-white block">Descricao</label>
+                <input type="text" name="descricao" placeholder="Descrição" class="bg-white w-full px-3 py-2 border rounded hover:outline hover:ring-2 hover:ring-blue-400" required> <br>
             </div>
 
-            <div class="h-15">
-                <label for="arquivos" class="font-bold">Adicione uma capa para o livro</label><br>
-                <input type="file" name="arquivos" class="hover:bg-gray-400 border-2"><br>
+            <div class="mb-4">
+                <label for="arquivos" class="font-bold block text-white">Adicione uma capa para o livro</label><br>
+                <input type="file" name="arquivos[]" class="w-full bg-white border rounded py-2 px-3 hover:outline hover:ring-2 hover:ring-blue-400" multiple>
             </div>
 
-            <div class="flex pt-5">
-                <button type="submit" class="border-2 h-10 w-30 bg-gray-400 hover:bg-gray-500">Cadastrar</button>
-                <a class="border-2 h-10 w-30 bg-gray-400 hover:bg-gray-500" href="index.php">Voltar</a>
-            </div>
+                <button type="submit" class="w-full rounded bg-blue-500 text-white py-2 hover:bg-blue-600 transition font-semibold">Cadastrar</button>
+                <a class="block text-center text-blue-300 mt-3 hover:underline" href="index.php">Voltar</a>
+
         </form>
-    </div>
 
-    <div class="p-3">
-        
     </div>
-
 </body>
-
 
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
