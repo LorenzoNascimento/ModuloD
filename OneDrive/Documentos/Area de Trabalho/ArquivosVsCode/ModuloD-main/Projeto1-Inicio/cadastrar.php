@@ -12,7 +12,7 @@ if (isset($_FILES['arquivos'])) {
     foreach ($names as $name) {
         $extesion = pathinfo($name, PATHINFO_EXTENSION);
         if ($extesion != 'png' && $extesion != 'jpg'  && $extesion != 'jpeg') {
-            die('Coloca uma imagem valida animal!');
+            die('Aceitamos imagens apenas do tipo (.PNG .JPG .JPEG) - <a href="cadastrar.php">Voltar!</a>');
         }
     }
 

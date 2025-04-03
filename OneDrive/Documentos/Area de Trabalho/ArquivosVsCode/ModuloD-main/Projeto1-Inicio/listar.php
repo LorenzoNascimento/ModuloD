@@ -25,7 +25,7 @@ if (isset($_POST['pesquisar'])) {
 
     <form method="POST" class="flex justify-center mb-4 py-5">
         <input type="text" name="pesquisar" placeholder="pesquisar..." class="p-2 rounded bg-gray-100 border border-gray-400 focus:ring-2 focus:ring-blue-400">
-        <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 ml-2">Pesquisar</button>
+        <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 ml-2 transition">Pesquisar</button>
     </form>
 
     <table class="w-full border-collapse bg-gray-800 text-white">
@@ -45,10 +45,10 @@ if (isset($_POST['pesquisar'])) {
                     <td class="p-3"><?= $livro['autor']; ?></td>
                     <td class="p-3"><?= $livro['descricao']; ?></td>
                     <td class="p-3 flex justify-center space-x-2">
-                        <a href="update.php?id=<?= $livro['id'] ?>" class="bg-yellow-500 text-white py-1 px-3 rounded hover:bg-yellow-600">Editar</a>
+                        <a href="update.php?id=<?= $livro['id'] ?>" class="bg-yellow-500 text-white py-1 px-3 rounded hover:bg-yellow-600 transition">Editar</a>
                         <form action="deletar.php" method="POST">
                             <button onclick="return confirm('Você realmentre deseja excluir este livro?')"
-                                type="submit" name="deletar_livro" value="<?= $livro['id'] ?>" class="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600">Excluir</button>
+                                type="submit" name="deletar_livro" value="<?= $livro['id'] ?>" class="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 transition">Excluir</button>
                         </form>
                     </td>
                 </tr>
@@ -57,8 +57,8 @@ if (isset($_POST['pesquisar'])) {
 
     </table>
 
-    <div class="text-center mt-4 bg-blue-500 rounded px-10 py-2 hover:bg-blue-500 transition">
-        <a href="index.php" class="text-white"">Pagina inicial</a>
+    <div class="text-center mt-4 bg-blue-500 rounded px-10 py-2 hover:bg-blue-600 transition">
+        <a href="index.php" class="text-white">Pagina inicial</a>
     </div>
 
 </body>

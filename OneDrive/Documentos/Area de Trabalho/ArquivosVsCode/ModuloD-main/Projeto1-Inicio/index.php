@@ -25,7 +25,6 @@
         <div class="w-full grid justify-items-center">
         <a href="logout.php" class="font-bold text-white hover:text-black">Logout</a><br>
         </div>
-        <a href="listar copy.php">AQUI</a>
 
     </div>
 </body>
