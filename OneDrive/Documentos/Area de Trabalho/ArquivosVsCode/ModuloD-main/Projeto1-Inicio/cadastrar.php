@@ -3,6 +3,8 @@
 include('db.php');
 include('protect.php');
 
+$imagemNome = null;
+
 if (isset($_FILES['arquivos'])) {
 
     $arquivo = $_FILES['arquivos'];
@@ -20,14 +22,16 @@ if (isset($_FILES['arquivos'])) {
         $extesion = pathinfo($name, PATHINFO_EXTENSION);
         $newName = uniqid() . '.' . $extesion;
         move_uploaded_file($tmp_name[$index], 'uploads/' . $newName);
+        $imagemNome = $newName;
     }
 }
 if ($_POST) {
-    $query = db()->prepare("INSERT INTO livros (titulo, autor, descricao) VALUES (:titulo, :autor, :descricao)");
+    $query = db()->prepare("INSERT INTO livros (titulo, autor, descricao, imagem) VALUES (:titulo, :autor, :descricao, :imagem)");
     $livros = $query->execute([
         'titulo' => $_POST['titulo'],
         'autor' => $_POST['autor'],
-        'descricao' => $_POST['descricao']
+        'descricao' => $_POST['descricao'],
+        'imagem' => $imagemNome
     ]);
 }
 
@@ -37,9 +41,9 @@ if ($_POST) {
 
     <div class="bg-gray-700 p-8 rounded-lg w-96 shadow-lg">
         <h1 class="font-bold text-3xl text-white text-center mb-5">Cadastro de livros</h1>
-    
 
-        
+
+
         <form method="POST" enctype="multipart/form-data">
 
             <div class="mb-4">
@@ -62,8 +66,8 @@ if ($_POST) {
                 <input type="file" name="arquivos[]" class="w-full bg-white border rounded py-2 px-3 hover:outline hover:ring-2 hover:ring-blue-400" multiple>
             </div>
 
-                <button type="submit" class="w-full rounded bg-blue-500 text-white py-2 hover:bg-blue-600 transition font-semibold">Cadastrar</button>
-                <a class="block text-center text-blue-300 mt-3 hover:underline" href="index.php">Voltar</a>
+            <button type="submit" class="w-full rounded bg-blue-500 text-white py-2 hover:bg-blue-600 transition font-semibold">Cadastrar</button>
+            <a class="block text-center text-blue-300 mt-3 hover:underline" href="index.php">Voltar</a>
 
         </form>
 
