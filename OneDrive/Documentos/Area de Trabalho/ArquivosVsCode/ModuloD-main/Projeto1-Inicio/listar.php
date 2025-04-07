@@ -16,12 +16,7 @@ if (isset($_POST['pesquisar'])) {
 }
 
 ?>
-<form method="POST">
-    <input type="text" name="pesquisar" placeholder="pesquisar...">
-    <button type="submit">Pesquisar</button>
-</form>
 
-<<<<<<< HEAD
 <body class="bg-gray-300 flex flex-col items-center justify-center">
 
     <div class="bg-gray-700 p-8 w-full">
@@ -40,35 +35,6 @@ if (isset($_POST['pesquisar'])) {
                 <th class="p-3 text-left">Autor</th>
                 <th class="p-3 text-left">Descricao</th>
                 <th class="p-3 text-left">Ações</th>
-=======
-<table>
-    <thead>
-        <tr>
-            <th>Titulo</th>
-            <th>Autor</th>
-            <th>Descricao</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <?php foreach ($livros as $livro): ?>
-            <tr>
-                <td><?= $livro['titulo']; ?></td>
-                <td><?= $livro['autor']; ?></td>
-                <td><?= $livro['descricao']; ?></td>
-                <td>
-                    <button> <a href="update.php?id=<?= $livro['id'] ?>">Editar</a> </button>
-                </td>
-                <td>
-                    
-                        <form action="deletar.php" method="POST">
-                            <button onclick="return confirm('Você realmentre deseja excluir este livro?')"
-                                type="submit" name="deletar_livro" value="<?= $livro['id'] ?>">Excluir</button>
-                        </form>
-                   
-                </td>
->>>>>>> 15ac55446297b97fb20e4852470d1d97fe7b2f43
             </tr>
         </thead>
 
@@ -82,8 +48,7 @@ if (isset($_POST['pesquisar'])) {
                         <a href="update.php?id=<?= $livro['id'] ?>" class="bg-yellow-500 text-white py-1 px-3 rounded hover:bg-yellow-600 transition">Editar</a>
                         <form action="deletar.php" method="POST">
                             <button onclick="return confirm('Você realmentre deseja excluir este livro?')"
-                                type="submit" name="deletar_livro" value="<?= $livro['id'] ?>" class="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 transition">Excluir
-                            </button>
+                                type="submit" name="deletar_livro" value="<?= $livro['id'] ?>" class="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 transition">Excluir</button>
                         </form>
                     </td>
                 </tr>

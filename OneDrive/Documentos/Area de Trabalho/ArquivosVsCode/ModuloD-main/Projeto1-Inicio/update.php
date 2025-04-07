@@ -18,7 +18,6 @@ if ($_POST) {
 
 ?>
 
-<<<<<<< HEAD
 <body class="bg-gray-300 flex flex-col items-center justify-center min-h-screen">
 
     <div class="bg-gray-700 p-8 rounded-lg w-96 shadow-lg">
@@ -48,16 +47,3 @@ if ($_POST) {
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-=======
-<form action="" method="POST">
-    <p>Digite as alterções</p>
-    <label for="">Titulo</label>
-    <input type="text" name="titulo"><br>
-    <label for="">Autor</label>
-    <input type="text" name="autor"><br>
-    <label for="">Descricao</label>
-    <input type="text" name="descricao">
-    <button onclick="return confirm('Deseja alterar as informações deste livro?')" type="submit">Salvar</button>
-</form>
-<a href="listar.php">Voltar</a>
->>>>>>> 15ac55446297b97fb20e4852470d1d97fe7b2f43
